@@ -1,0 +1,28 @@
+.select {
+	display: flex;
+	font-family: Arial, Helvetica, sans-serif;
+	flex-direction: row;
+	align-items: center;
+}
+
+.select__text {
+margin: 0;
+background: #005bff;
+color: white;
+padding: 15px;
+align-self: center;
+border-radius: 10px;
+}
+
+.select__container {
+	margin-left: 15px;
+	max-width: 300px;
+	height: 48px;
+	border-radius: 10px;
+	border: 1px solid #005bff;
+	cursor: pointer;
+}
+
+.select__option  {
+
+}

@@ -1,12 +1,15 @@
 import React from 'react';
+import Header from './Header.jsx'
 
 import './App.css';
 
 const App = () => {
 
-	return(
+	return (
 		<div>
-			<h1 className='headline'> React is owrk</h1>
+			<Header>
+
+			</Header>
 		</div>
 	)
 }
