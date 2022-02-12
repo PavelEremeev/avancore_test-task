@@ -31,3 +31,7 @@ flex-direction: column;
     cursor: pointer;
     margin: 5px 0 5px 0;
 }
+
+.radio__input-text_active {
+    font-weight: 600;
+}

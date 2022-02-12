@@ -10,9 +10,10 @@ const Select = ({ data }) => {
 			<p className='select__text'>Наименование фонда:</p>
 			<select className='select__container'>
 				<option className='select__option'>- - Выберите значение - -</option>
-				{data.map((element, i) => <option className='select__option'
+				{data.map((element) => <option className='select__option'
 					value={element.entryPointDocument}
-					key={i}>{element.description}
+					key={element.entryPointDocument}>{element.description}
+
 				</option>)}
 			</select>
 		</div>

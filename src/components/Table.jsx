@@ -10,14 +10,14 @@ const Table = ({ data }) => {
 			<p className='table__text'>Наименование фонда:</p>
             <table className='table'>
                 <thead>
+                    <tr>
                     <th>№</th>
                     <th>Описание</th>
+                    </tr>
                 </thead>
                 <tbody>
 				{data.map((element, i) => 
-                <tr 
-                id={element.entryPointDocument}
-                key={i}>
+                <tr key={element.entryPointDocument}>
                 <td>{i+1}</td>
                 <td>{element.description}</td>
 				</tr>)}
