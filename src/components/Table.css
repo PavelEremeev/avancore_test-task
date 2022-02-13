@@ -10,16 +10,17 @@
     background: #005bff;
     color: white;
     padding: 15px;
-    align-self: center;
+    align-self: baseline;
     border-radius: 10px;
-    width: 170px;
+    max-width: 170px;
+	width: 100%;
 }
 
 .table {
 margin-left: 15px;
 display: flex;
 flex-direction: column;
-width: 600px;
+width: 75%;
 /* border: 1px solid #005bff;
 border-collapse: collapse; */
 background: aliceblue;

@@ -11,14 +11,15 @@ margin: 0;
 background: #005bff;
 color: white;
 padding: 15px;
-align-self: center;
+align-self: baseline;
 border-radius: 10px;
-width: 170px;
+max-width: 170px;
+	width: 100%;
 }
 
 .select__container {
 	margin-left: 15px;
-	max-width: 300px;
+	width: 75%;
 	height: 48px;
 	border-radius: 10px;
 	border: 1px solid #005bff;

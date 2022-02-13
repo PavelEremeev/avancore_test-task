@@ -11,15 +11,17 @@
     background: #005bff;
     color: white;
     padding: 15px;
-    align-self: center;
+    align-self: baseline;
     border-radius: 10px;
-    width: 170px;
+    max-width: 170px;
+	width: 100%;
 }
 
 .radio__container {
 margin-left: 15px;
 display: flex;
 flex-direction: column;
+width: 75%;
 }
 
 .radio__input {
@@ -27,7 +29,7 @@ flex-direction: column;
 }
 
 .radio__input-text {
-    width: 600px;
+    
     cursor: pointer;
     margin: 5px 0 5px 0;
 }
