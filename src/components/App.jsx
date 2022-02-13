@@ -13,7 +13,7 @@ const App = () => {
 	const handleElementClick = useCallback(
 		element => {
 			setCurrentElementId(element.entryPointDocument)
-
+			
 		},
 		[]
 	);
@@ -22,12 +22,14 @@ const App = () => {
 		<div>
 				<Select data={list}
 				onElementClick={handleElementClick} 
-				currentElement={currentElementId}
+				currentElementId={currentElementId}
 				/>
 				<Radio data={list} 
 				onElementClick={handleElementClick} 
 				currentElementId={currentElementId}/>
-				<Table data={list}/>
+				<Table data={list}
+				onElementClick={handleElementClick} 
+				currentElementId={currentElementId}/>
 		</div>
 	)
 }

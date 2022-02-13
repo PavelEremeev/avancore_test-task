@@ -15,13 +15,17 @@ const Radio = ({ data, onElementClick, currentElementId }) => {
                 <label 
                 className=
                 {currentElementId === element.entryPointDocument
-                 ? 'radio__input-text radio__input-text_active'
-                 : 'radio__input-text'} key={element.entryPointDocument}>
+                 ? 'radio__input-text radio__input-text_active' 
+                 : 'radio__input-text'} 
+				key={element.entryPointDocument}>
                 <input type='radio' 
                 className='radio__input' 
                 value={element.entryPointDocument}
                 name='radio'
-                onClick={() => onElementClick(element)}
+				checked={currentElementId === element.entryPointDocument
+					? 'checked' 
+					: ''}
+                onChange={() => onElementClick(element)}
 				/>
                 {element.description}</label>)}
 			</div>

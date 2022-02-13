@@ -3,7 +3,9 @@ import React from 'react';
 
 import './Table.css';
 
-const Table = ({ data }) => {
+const Table = ({ data, onElementClick, currentElementId }) => {
+
+	console.log(currentElementId)
 
 	return (
 		<div className='table__container'>
@@ -17,7 +19,9 @@ const Table = ({ data }) => {
                 </thead>
                 <tbody>
 				{data.map((element, i) => 
-                <tr key={element.entryPointDocument}>
+                <tr className={currentElementId === element.entryPointDocument ? 'tr_active' : ''} 
+				key={element.entryPointDocument} 
+				onClick={() => onElementClick(element)}>
                 <td>{i+1}</td>
                 <td>{element.description}</td>
 				</tr>)}
