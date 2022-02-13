@@ -18,10 +18,10 @@
 }
 
 .radio__container {
-margin-left: 15px;
-display: flex;
-flex-direction: column;
-width: 75%;
+	margin-left: 15px;
+	display: flex;
+	flex-direction: column;
+	width: 75%;
 }
 
 .radio__input {
@@ -29,9 +29,17 @@ width: 75%;
 }
 
 .radio__input-text {
-    
     cursor: pointer;
     margin: 5px 0 5px 0;
+	transition: ease-in .2s ;
+	padding: 3px;
+	margin: 3px 0 3px 0;
+}
+
+.radio__input-text:hover {
+    background-color: aliceblue;
+	transition: ease-in .2s;
+	border-radius: 10px;
 }
 
 .radio__input-text_active {

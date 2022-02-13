@@ -24,7 +24,8 @@ width: 75%;
 /* border: 1px solid #005bff;
 border-collapse: collapse; */
 background: aliceblue;
-    border-radius: 15px;
+border-radius: 15px;
+border-spacing: 0;
 }
 
 .table tr {
@@ -38,7 +39,11 @@ background: aliceblue;
 }
 
 .table td, .table th {
-    padding: 5px 0 5px 30px;
+    padding: 5px 10px 5px 10px;
+}
+
+.table td {
+    border: 1px solid #0059ff11;
 }
 
 .table thead {
