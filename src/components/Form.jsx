@@ -25,16 +25,18 @@ const Form = ({ data, currentElementId, handleAddElement  }) => {
 
 	return (
 		<div className='form'>
-			<p className='form__text'>Наименование фонда:</p>
-			<form onSubmit={handleSubmit}>
+			<p className='form__text'>Добавить фонд:</p>
+			<form className='form__container' onSubmit={handleSubmit}>
 				<input 
+				className='form__input'
 				value={input} 
 				type='text'
 				placeholder='Введите название фонда' 
 				onChange={handleChange}
 				onKeyDown={handleKeyDown}
 				/>
-				<button>Добавить</button>
+				<button
+				className='form__button'>Добавить</button>
 			</form>
 		</div>
 	)
