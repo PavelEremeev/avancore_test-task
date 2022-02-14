@@ -21,8 +21,8 @@ const App = () => {
 	return (
 		<div>
 				<Select data={list}
-				onElementClick={handleElementClick} 
 				currentElementId={currentElementId}
+				setCurrentElementId={setCurrentElementId}
 				/>
 				<Radio data={list} 
 				onElementClick={handleElementClick} 
